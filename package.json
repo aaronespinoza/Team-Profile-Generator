@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/aaronespinoza/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.0",
+      "fs": "^0.0.1-security",
+      "inquirer": "^8.2.0",
+      "test": "^0.6.0"
+  },
+  "devDependencies": {
     "jest": "^27.4.5"
   }
 }
