@@ -9,3 +9,4 @@ Email:aarone@berkeley.edu
 Github: https://github.com/aaronespinoza
 
 ##Walkthrough Link
+https://watch.screencastify.com/v/ZkmpoV8recUSOEIpNGpC
