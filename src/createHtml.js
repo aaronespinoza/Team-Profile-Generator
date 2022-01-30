@@ -1,4 +1,3 @@
-  
 const createHtml = (employees) => {
     let cards = "";
     for (let i = 0; i < employees.length; i++) {
@@ -78,7 +77,7 @@ const generateBody = (cards) => {
           <title>Team Profile Generator</title>
         </head>
         <body>
-        <div class="p-2 mb-4 rounded-3 bg-success text-white">
+        <div class="p-2 mb-4 rounded-3 bg-primary text-white">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold text-center">My Team Members</h1>
         </div>

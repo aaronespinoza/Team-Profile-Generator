@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const employees = [];
+const employees = []
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
-const createHtml = require("./utils/createHtml");
+const createHtml = require("./src/createHtml");
 
 function addEngineer() {
     inquirer.prompt([{
@@ -110,7 +110,7 @@ function writeToFile(fileName, data) {
 }
 
 function quit() {
-    const html = createHTML(employees)
+    const html = createHtml(employees)
     writeToFile("./dist/index.html", html)
 }
 addManager()
