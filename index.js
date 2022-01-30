@@ -28,6 +28,8 @@ function addEngineer() {
         const engineer = new Engineer(data.name, data.email, data.id, data.github)
         console.log(engineer)
         employees.push(engineer)
+        //calls next prompt function allowing user
+        //to add more empoloyees or exit prompts
         nextPrompt()
     })
 }
@@ -83,3 +85,32 @@ function addManager() {
         nextPrompt()
     })
 }
+
+function nextPrompt() {
+    inquirer.prompt([{
+        type: 'list',
+        message: 'What do you want to add next?',
+        name: 'option',
+        choices: ['Engineer', 'Intern', 'Quit']
+    }]).then(function(data) {
+        if (data.option == "Engineer") {
+            addEngineer()
+        } else if (data.option == "Intern") {
+            addIntern()
+        } else if (data.option == "Quit") {
+            quit()
+        }
+    })
+}
+
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Success!')
+    );
+}
+
+function quit() {
+    const html = createHTML(employees)
+    writeToFile("./dist/index.html", html)
+}
+addManager()
