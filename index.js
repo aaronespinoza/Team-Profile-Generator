@@ -25,7 +25,7 @@ function addEngineer() {
         name: "github",
     }]).then(function(data) {
         console.log(data)
-        const engineer = new Engineer(data.name, data.email, data.id, data.github)
+        const engineer = new Engineer(data.name, data.id, data.email, data.github)
         console.log(engineer)
         employees.push(engineer)
         //calls next prompt function allowing user
@@ -53,7 +53,7 @@ function addIntern() {
         name: "school",
     }]).then(function(data) {
         console.log(data)
-        const intern = new Intern(data.name, data.email, data.id, data.school)
+        const intern = new Intern(data.name, data.id, data.email, data.school)
         console.log(intern)
         employees.push(intern)
         nextPrompt()
@@ -79,7 +79,7 @@ function addManager() {
         name: "officeNumber",
     }]).then(function(data) {
         console.log(data)
-        const manager = new Manager(data.name, data.email, data.id, data.officeNumber)
+        const manager = new Manager(data.name, data.id, data.email, data.officeNumber)
         console.log(manager)
         employees.push(manager)
         nextPrompt()
