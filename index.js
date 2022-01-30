@@ -13,12 +13,12 @@ function addEngineer() {
         name: "name",
     }, {
         type: "input",
-        message: "What is the Engineer's email?",
-        name: "email",
-    }, {
-        type: "input",
         message: "What is the Engineer's id?",
         name: "id",
+    }, {
+        type: "input",
+        message: "What is the Engineer's email?",
+        name: "email",
     }, {
         type: "input",
         message: "What is the Engineer's Github?",
@@ -41,12 +41,12 @@ function addIntern() {
         name: "name",
     }, {
         type: "input",
-        message: "What is the Intern's email?",
-        name: "email",
-    }, {
-        type: "input",
         message: "What is the Intern's id?",
         name: "id",
+    }, {
+        type: "input",
+        message: "What is the Intern's email?",
+        name: "email",
     }, {
         type: "input",
         message: "What school did the Intern go to?",
@@ -65,14 +65,14 @@ function addManager() {
         type: "input",
         message: "What is the Manager's name?",
         name: "name",
-    }, {
-        type: "input",
-        message: "What is the Manager's email?",
-        name: "email",
-    }, {
+    },  {
         type: "input",
         message: "What is the Manager's id?",
         name: "id",
+    },{
+        type: "input",
+        message: "What is the Manager's email?",
+        name: "email",
     }, {
         type: "input",
         message: "What is the Manager's office number?",
